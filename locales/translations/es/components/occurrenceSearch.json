@@ -1,5 +1,6 @@
 {
   "occurrenceSearch": {
+    "title": "",
     "table": "Tabla",
     "gallery": "Galería",
     "map": "Map",
@@ -24,6 +25,9 @@
     "done": "Hecho",
     "yesCorrectSuggestion": "Sí",
     "noWrongSuggestion": "No",
-    "errorUserThrottled": "Acceso temporalmente restringido."
+    "errorUserThrottled": "Acceso temporalmente restringido.",
+    "polygonSimplifiedToFewerDecimals": "",
+    "polygonSimplifiedToFewerPoints": "",
+    "largeQueryLengthWarning": ""
   }
 }

@@ -1,5 +1,6 @@
 {
   "occurrenceSearch": {
+    "title": "出現紀錄搜尋",
     "table": "表",
     "gallery": "圖片集",
     "map": "地圖",
@@ -24,6 +25,9 @@
     "done": "已完成",
     "yesCorrectSuggestion": "是",
     "noWrongSuggestion": "否",
-    "errorUserThrottled": "您的存取暫時被停用"
+    "errorUserThrottled": "您的存取暫時被停用",
+    "polygonSimplifiedToFewerDecimals": "",
+    "polygonSimplifiedToFewerPoints": "",
+    "largeQueryLengthWarning": "您查詢條件的網址超過 2000 個字元，可能無法在所有瀏覽器中正常運作。針對大量或複雜的查詢，請考慮使用下載 API。"
   }
 }

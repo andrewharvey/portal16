@@ -24,9 +24,7 @@
       "other": "Филиалы GBIF"
     },
     "role": "Роль",
-    "group": {
-
-    },
+    "group": {},
     "gbif_secretariat": "Секретариат GBIF",
     "membershipType": "Членство",
     "name": "Название",
@@ -41,13 +39,13 @@
     },
     "roles": {
       "HEAD_OF_DELEGATION": "Глава делегации",
-      "NODE_MANAGER": "Менеджер узла"
+      "NODE_MANAGER": "Руководитель национального узла"
     },
     "publishers": "Публикаторы данных",
     "memberSince": "Член с",
     "participant": "Участник",
     "pPublishers": "{NUMBER, select, 1{публикатор} other{публикаторов}}",
-    "pOccurrence": "{NUMBER, select, 1{находка} other{находок}}",
+    "pOccurrence": "{NUMBER, plural,\n0 {находок}\none {находка}\nfew {находки}\nmany {находок}\nother {находок}\n}",
     "occurrenceDatasets": "Наборы данных о находках видов",
     "occurrences": "Находки"
   }

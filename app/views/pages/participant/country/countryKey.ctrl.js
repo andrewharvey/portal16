@@ -7,6 +7,8 @@ require('./about/countryAbout.ctrl');
 require('./publishing/countryPublishing.ctrl');
 require('./participation/countryParticipation.ctrl');
 require('./research/countryResearch.ctrl');
+require('./projects/countryProjects.ctrl');
+
 
 angular
     .module('portal')
@@ -14,7 +16,7 @@ angular
 
 /** @ngInject */
 // eslint-disable-next-line max-len
-function countryKeyCtrl($http, $stateParams, $state, constantKeys, Country, Page, $translate, env, MapCapabilities, DatasetSearch, OccurrenceSearch, OccurrenceCountDatasets, OccurrenceTableSearch) {
+function countryKeyCtrl($http, $stateParams, $state, constantKeys, Country, Page, $translate, env, PublisherSearch, MapCapabilities, DatasetSearch, OccurrenceSearch, OccurrenceCountDatasets, OccurrenceTableSearch, ResourceSearch) {
     var vm = this;
     vm.countryCode = gb.countryCode;
     vm.isParticipant = gb.isParticipant;
@@ -28,6 +30,12 @@ function countryKeyCtrl($http, $stateParams, $state, constantKeys, Country, Page
     });
 
     vm.country = Country.get({key: vm.countryCode});
+
+    ResourceSearch.query({contractCountry: vm.countryCode, contentType: 'project', limit: 1}, function(data) {
+        vm.projects = data;
+    }, function() {
+        // TODO handle request error
+    });
 
     vm.countryCapabilities = MapCapabilities.get({country: vm.key});
     vm.publishingCountryCapabilities = MapCapabilities.get({publishingCountry: vm.countryCode});
@@ -51,6 +59,9 @@ function countryKeyCtrl($http, $stateParams, $state, constantKeys, Country, Page
         .then(function() {
             vm.datasetCount = Object.keys(vm.datasets).length;
         });
+
+    vm.datasetsFrom = DatasetSearch.query({publishingCountry: vm.countryCode});
+    vm.publishersFrom = PublisherSearch.query({country: vm.countryCode, isEndorsed: true});
 
     vm.invasiveSpeciesDatasets = DatasetSearch.query({keyword: 'country_' + vm.countryCode, publishingOrg: constantKeys.publisher.GRIIS});// TODO move to hardcoded keys
     vm.invasiveSpeciesDatasets.$promise
@@ -80,21 +91,27 @@ function countryKeyCtrl($http, $stateParams, $state, constantKeys, Country, Page
     ];
 
     OccurrenceTableSearch.query({
-        publishingCountry: vm.countryCode,
-        facet: 'kingdomKey',
-        limit: 0
+        'publishingCountry': vm.countryCode,
+        'facet': ['kingdomKey', 'country'],
+        'country.facetLimit': 999999,
+        'limit': 0
     }, function(response) {
         vm.kingdomsFrom = response.facets.KINGDOM_KEY.counts;
+        vm.countriesCoveredBy = Object.keys(response.facets.COUNTRY.counts).length;
+        vm.occurrencesFrom = response.count;
     }, function() {
         // TODO couldn't get the data
     });
 
     OccurrenceTableSearch.query({
-        country: vm.countryCode,
-        facet: 'kingdomKey',
-        limit: 0
+        'country': vm.countryCode,
+        'facet': ['kingdomKey', 'publishingOrg'],
+        'publishingOrg.facetLimit': 999999,
+        'limit': 0
     }, function(response) {
         vm.kingdomsAbout = response.facets.KINGDOM_KEY.counts;
+        vm.publishersAbout = Object.keys(response.facets.PUBLISHING_ORG.counts).length;
+        vm.occurrencesAbout = response.count;
     }, function() {
         // TODO couldn't get the data
     });

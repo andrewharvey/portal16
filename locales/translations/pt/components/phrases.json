@@ -21,6 +21,7 @@
     "noData": "Sem dados",
     "payloadTooLarge": "",
     "readMore": "Lê mais",
-    "share": ""
+    "share": "",
+    "loginRequiredDueToSpam": "Por favor, inicie sua sessão para proceder."
   }
 }

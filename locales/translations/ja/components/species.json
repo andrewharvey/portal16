@@ -1,7 +1,7 @@
 {
   "treatment": {
-    "distribution": "",
-    "figures": ""
+    "distribution": "分布",
+    "figures": "図"
   },
   "species": {
     "distribution": {
@@ -26,6 +26,10 @@
       "isInvasive": "インパクトの証拠",
       "isInvasive_yes": "はい",
       "isInvasive_no": "いいえ"
+    },
+    "treatment": {
+      "distribution": "",
+      "figures": ""
     },
     "as": "として",
     "in": "で",
@@ -74,6 +78,7 @@
     "lastCrawled": "最終クロール日 {DATE_FORMATTED}",
     "extensions": "拡張モジュール",
     "taxa": "分類群",
-    "mediatedThrough": ""
+    "mediatedThrough": "",
+    "taxonIdentifiers": ""
   }
 }

@@ -1,15 +1,16 @@
 {
     "resourceSearch": {
+        "title": "",
         "upcoming": "Предстоящие",
-        "past": "Прошлые",
-        "searchForNewsEventsDocuments": "Поиск новостей, событий, документов и гораздо больше. Если вы ищите информацию о находках видов, тогда попробуйте соответствующий раздел поиск.",
-        "occurrenceSearch": "Поиск находок видов",
-        "subscribeToCalendar": "Подписка на календарь",
-        "citationExplainer": "Узнайте больше о литературе, как она обнаруживается и связывается с данными в GBIF.",
+        "past": "Прошедшие",
+        "searchForNewsEventsDocuments": "Здесь Вы можете найти новости, информацию о мероприятиях, разнообразные документы и многое другое. Для поиска информации о находках видов перейдите в соответствующий раздел.",
+        "occurrenceSearch": "Поиск находок",
+        "subscribeToCalendar": "Подписаться на календарь мероприятий",
+        "citationExplainer": "Узнайте больше о том, как  отслеживается использование данных GBIF в публикациях",
         "types": {
             "events": "Мероприятия",
             "news": "Новости",
-            "resources": "Ресурсы",
+            "resources": "Материалы",
             "projects": "Проекты",
             "programmes": "Программы",
             "documents": "Документы",
@@ -18,21 +19,21 @@
             "literature": "Литература"
         },
         "filters": {
-            "countriesOfCoverage": "Страна или область покрытия",
-            "countriesOfResearcher": "Страна или регион исследователя",
-            "literatureType": "Тип литературы",
-            "contractCountry": "Страна или регион",
-            "topics": "Тема",
+            "countriesOfCoverage": "Страна (территория) интереса",
+            "countriesOfResearcher": "Страна (территория) исследователей",
+            "literatureType": "Источник",
+            "contractCountry": "Страна или территория",
+            "topics": "Тематика",
             "audiences": "Аудитория",
-            "purposes": "Назначение",
-            "relevance": "Релевантность",
+            "purposes": "Направление",
+            "relevance": "Отношение публикации к GBIF",
             "language": "Язык",
             "year": "Год",
             "gbifDatasetKey": "Набор данных",
-            "publishingOrganizationKey": "Публикатор",
-            "peerReview": "Прошедшие рецензию",
-            "openAccess": "Открытый доступ",
-            "gbifDownloadKey": "Ключ для скачивания"
+            "publishingOrganizationKey": "Организация",
+            "peerReview": "Рецензируемая публикация",
+            "openAccess": "В открытом доступе",
+            "gbifDownloadKey": "Ключ для получения файла"
         }
     }
 }

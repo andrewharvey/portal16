@@ -1,5 +1,6 @@
 {
   "dataset": {
+    "datasetSearchTitle": "",
     "longType": {
       "OCCURRENCE": "Observationsdatasæt",
       "CHECKLIST": "Checklistedatasæt",
@@ -38,6 +39,7 @@
     "projectId": "Projekt-ID",
     "studyArea": "Undersøgt område",
     "publishedBy": "Udgivet af",
+    "mediatedBy": "",
     "description": "Beskriveslse",
     "metadataLanguage": "Metadata sprog",
     "dataLanguage": "Data sprog",
@@ -77,6 +79,7 @@
     "eventDescription": "Event beskrivelse",
     "siblingEvents": "Søskende events",
     "childEvents": "Underordnede events",
+    "events": "",
     "occurrenceCount": "Antal observationer",
     "inDataset": "",
     "samplingArticleLink": ""

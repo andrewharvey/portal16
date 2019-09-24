@@ -1,5 +1,6 @@
 {
   "dataset": {
+    "datasetSearchTitle": "",
     "longType": {
       "OCCURRENCE": "",
       "CHECKLIST": "",
@@ -38,6 +39,7 @@
     "projectId": "",
     "studyArea": "",
     "publishedBy": "",
+    "mediatedBy": "",
     "description": "",
     "metadataLanguage": "",
     "dataLanguage": "",
@@ -77,6 +79,7 @@
     "eventDescription": "",
     "siblingEvents": "",
     "childEvents": "",
+    "events": "",
     "occurrenceCount": "",
     "inDataset": "",
     "samplingArticleLink": ""

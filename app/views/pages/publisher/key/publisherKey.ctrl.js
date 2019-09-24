@@ -13,9 +13,11 @@ angular
 
 /** @ngInject */
 function publisherKeyCtrl($stateParams, $state, MapCapabilities, OccurrenceTableSearch, LOCALE, PublisherExtended, OccurrenceSearch,
-    ResourceSearch, Node, Page, PublisherInstallations, DatasetSearch, BUILD_VERSION) {
+    ResourceSearch, Node, Page, PublisherInstallations, DatasetSearch, BUILD_VERSION, $translate) {
     var vm = this;
-    Page.setTitle('Publisher');
+    $translate('publisher.header.publisher').then(function(title) {
+        Page.setTitle(title);
+    });
     Page.drawer(false);
     vm.key = $stateParams.key;
     vm.capabilities = MapCapabilities.get({publishingOrg: vm.key});
@@ -54,8 +56,12 @@ function publisherKeyCtrl($stateParams, $state, MapCapabilities, OccurrenceTable
     });
 
     function extractContacts() {
-        vm.technicalContact = _.find(vm.publisher.contacts, {type: 'TECHNICAL_POINT_OF_CONTACT'});
-        vm.adminContact = _.find(vm.publisher.contacts, {type: 'ADMINISTRATIVE_POINT_OF_CONTACT'});
+        var sortedContacts = _.sortBy(vm.publisher.contacts,
+            function(o) {
+                return !o.primary;
+            });
+        vm.technicalContact = _.find(sortedContacts, {type: 'TECHNICAL_POINT_OF_CONTACT'});
+        vm.adminContact = _.find(sortedContacts, {type: 'ADMINISTRATIVE_POINT_OF_CONTACT'});
     }
 
     vm.kingdoms = [
@@ -109,12 +115,8 @@ function publisherKeyCtrl($stateParams, $state, MapCapabilities, OccurrenceTable
 
         vm.marker = {point: [vm.publisher.longitude, vm.publisher.latitude], message: vm.publisher.title};
         vm.baselayer = {
-            url: 'https://api.mapbox.com/v4/mapbox.outdoors/{z}/{x}/{y}.png?',
-            attribution: '&copy; <a href=\'https://www.mapbox.com/\' class="inherit">Mapbox</a> '
-            + '<a href=\'http://www.openstreetmap.org/copyright\' target=\'_blank\' class="inherit">OpenStreetMap contributors</a>',
-            params: {
-                access_token: 'pk.eyJ1IjoiZ2JpZiIsImEiOiJjaWxhZ2oxNWQwMDBxd3FtMjhzNjRuM2lhIn0.g1IE8EfqwzKTkJ4ptv3zNQ'
-            }
+            url: 'https://tile.gbif.org/3857/omt/{z}/{x}/{y}@1x.png?style=osm-bright-en&srs=EPSG%3A3857',
+            attribution: '&copy; <a href=\'http://www.openstreetmap.org/copyright\' target=\'_blank\' class="inherit">OpenStreetMap contributors</a>'
         };
     }
 }

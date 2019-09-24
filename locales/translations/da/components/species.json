@@ -27,6 +27,10 @@
       "isInvasive_yes": "",
       "isInvasive_no": ""
     },
+    "treatment": {
+      "distribution": "",
+      "figures": ""
+    },
     "as": "Som",
     "in": "I",
     "origin": "Oprindelse",
@@ -74,6 +78,7 @@
     "lastCrawled": "Senest indekseret {DATE_FORMATTED}",
     "extensions": "Udvidelser",
     "taxa": "Taxa",
-    "mediatedThrough": ""
+    "mediatedThrough": "",
+    "taxonIdentifiers": ""
   }
 }

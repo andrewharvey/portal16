@@ -1,24 +1,25 @@
 {
   "publisher": {
+    "searchTitle": "",
     "tabs": {
-      "aboutPublisher": "О публикаторе",
-      "metrics": "",
+      "aboutPublisher": "Об организациии",
+      "metrics": "Метрики",
       "publishersHomepage": "Домашняя страница"
     },
-    "joinedAgo": "Присоединился {TIME_AGO}",
-    "newPublisher": "Новый публикатор",
-    "technicalContact": "Технический контакт",
-    "country": "Страна или регион",
+    "joinedAgo": "Присоединилась к GBIF {TIME_AGO}",
+    "newPublisher": "Новая организация",
+    "technicalContact": "Технические вопросы",
+    "country": "Страна (территория)",
     "hosting": "Хостинг",
     "description": "Описание",
-    "endorsedBy": "Одобрено",
+    "endorsedBy": "Одобрена",
     "pendingEndorsementBy": "Ожидает одобрения",
-    "installations": "Установки",
+    "installations": "Поддерживаемые инсталляции",
     "contacts": "Контакты",
-    "administrativeContact": "Административный контакт",
+    "administrativeContact": "Административные вопросы",
     "header": {
-      "publisher": "Публикатор данных",
-      "sinceDate": "Начиная с {DATE}"
+      "publisher": "Организация",
+      "sinceDate": "в GBIF с {DATE}"
     }
   }
 }

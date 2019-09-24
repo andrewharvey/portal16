@@ -5,6 +5,7 @@
     "nConstituentDatasets": "Incluye registros de {NUMBER_FORMATTED} {NUMBER, select, one{conjunto de datos} other{conjuntos de datos}}",
     "fileNotAvailable": "El archivo ya no está disponible para descarga",
     "downloadDeletionWarning": "Esta descarga no se ha citado y es posible eliminarla despues de {DATE}.",
+    "occurrenceDownload": "",
     "brokenDownload": "Descarga interrumpida",
     "contactHelpdesk": "Contacta con el servicio de asistencia técnica",
     "cancelled": "Cancelada",
@@ -20,7 +21,7 @@
     "titleMissing": "Falta el título del juego de datos",
     "underProcessing": "En proceso",
     "citation": "Cita",
-    "format": "",
+    "format": "Formato",
     "nRecordsAtTime": "{NUMBER_FORMATED} {NUMBER, select, one{registro} other{registros}} en el momento de la descarga",
     "aboutDeletionPolicy": "Leer más sobre nuestra [deletion policy](/faq?question=for-how-long-will-does-gbif-store-downloads).",
     "readDatauseAndTerms": "Asegúrese de leer el [acuerdo para usuarios de datos](/términos/usuario de datos) y la [guía para citar](/guía para citar).",
@@ -60,5 +61,8 @@
       "not": "No",
       "isNotNull": "Está definido"
     }
+  },
+  "myDownloads": {
+    "title": ""
   }
 }

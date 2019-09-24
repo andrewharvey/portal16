@@ -9,11 +9,11 @@
                     wkt="occurrenceKey.wkt"
                     circle="occurrenceKey.circle"
                     marker="occurrenceKey.marker"
-                    baseLayer="occurrenceKey.baselayer"
                     projection="occurrenceKey.projection"
                     mapcenter="occurrenceKey.center"
                     on-map-move="occurrenceKey.onMapMove"
-                    mapstyle="'light'"></feature-map>
+                    map-style="'osm-bright-' + occurrenceKey.LOCALE_2_LETTER">
+                </feature-map>
 
                 <div class="globe-context">
                     <canvas class="globe"></canvas>

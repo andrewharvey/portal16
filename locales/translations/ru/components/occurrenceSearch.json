@@ -1,5 +1,6 @@
 {
   "occurrenceSearch": {
+    "title": "",
     "table": "Таблица",
     "gallery": "Галерея",
     "map": "Карта",
@@ -24,6 +25,9 @@
     "done": "Выполнено",
     "yesCorrectSuggestion": "Да",
     "noWrongSuggestion": "Нет",
-    "errorUserThrottled": ""
+    "errorUserThrottled": "",
+    "polygonSimplifiedToFewerDecimals": "",
+    "polygonSimplifiedToFewerPoints": "",
+    "largeQueryLengthWarning": ""
   }
 }

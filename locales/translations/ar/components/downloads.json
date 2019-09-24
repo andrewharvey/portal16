@@ -5,6 +5,7 @@
     "nConstituentDatasets": "",
     "fileNotAvailable": "",
     "downloadDeletionWarning": "",
+    "occurrenceDownload": "",
     "brokenDownload": "",
     "contactHelpdesk": "",
     "cancelled": "",
@@ -60,5 +61,8 @@
       "not": "",
       "isNotNull": ""
     }
+  },
+  "myDownloads": {
+    "title": ""
   }
 }

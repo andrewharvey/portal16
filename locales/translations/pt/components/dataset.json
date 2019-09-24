@@ -1,5 +1,6 @@
 {
   "dataset": {
+    "datasetSearchTitle": "Pesquisa de conjunto de dados",
     "longType": {
       "OCCURRENCE": "Conjunto de dados de ocorrência",
       "CHECKLIST": "Conjuntos de dados de checklists",
@@ -38,6 +39,7 @@
     "projectId": "ID do Projeto",
     "studyArea": "Área de estudo",
     "publishedBy": "Publicado por",
+    "mediatedBy": "Mediado por",
     "description": "Descrição",
     "metadataLanguage": "Linguagem de metadados",
     "dataLanguage": "Linguagem de dados",
@@ -77,6 +79,7 @@
     "eventDescription": "Descrição do evento",
     "siblingEvents": "Evento irmão",
     "childEvents": "Evento filho",
+    "events": "",
     "occurrenceCount": "Número (quantidade) de registos",
     "inDataset": "Em",
     "samplingArticleLink": "Mais sobre eventos de colheita em GBIF.org"

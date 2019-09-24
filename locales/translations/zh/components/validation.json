@@ -2,32 +2,32 @@
   "validation": {
     "category": {
       "RESOURCE_STRUCTURE": "资源结构",
-      "RESOURCE_INTEGRITY": "",
-      "RECORD_STRUCTURE": "",
-      "OCC_INTERPRETATION_BASED": "",
+      "RESOURCE_INTEGRITY": "资源完整性",
+      "RECORD_STRUCTURE": "记录结构",
+      "OCC_INTERPRETATION_BASED": "GBIF出现记录解析",
       "METADATA_CONTENT": "元数据内容",
-      "CLB_INTERPRETATION_BASED": ""
+      "CLB_INTERPRETATION_BASED": "GBF分类群解释"
     },
     "issueType": {
-      "DWCA_UNREADABLE": "",
-      "DWCA_META_XML_NOT_FOUND": "",
-      "DWCA_META_XML_SCHEMA": "",
-      "RECORD_IDENTIFIER_NOT_FOUND": "",
-      "CORE_ROWTYPE_UNDETERMINED": "",
+      "DWCA_UNREADABLE": "无法读取达尔文核心集档案",
+      "DWCA_META_XML_NOT_FOUND": "找不到 meta. xml 文件",
+      "DWCA_META_XML_SCHEMA": "Meta.xml 格式验证失败",
+      "RECORD_IDENTIFIER_NOT_FOUND": "在文件中找不到记录识别码",
+      "CORE_ROWTYPE_UNDETERMINED": "找不到或无法确定列类型",
       "EML_NOT_FOUND": "找不到 EML 文档",
-      "EML_GBIF_SCHEMA": "",
-      "UNKNOWN_ROWTYPE": "",
-      "REQUIRED_TERM_MISSING": "",
-      "COLUMN_MISMATCH": "",
-      "RECORD_REFERENTIAL_INTEGRITY_VIOLATION": "",
-      "UNKNOWN_TERM": "",
-      "DUPLICATED_TERM": "",
-      "TITLE_MISSING_OR_TOO_SHORT": "",
-      "RESOURCE_CONTACTS_MISSING_OR_INCOMPLETE": "",
-      "DESCRIPTION_MISSING_OR_TOO_SHORT": "",
-      "LICENSE_MISSING_OR_UNKNOWN": "",
-      "RECORD_NOT_UNIQUELY_IDENTIFIED": "",
-      "UNREADABLE_SECTION_ERROR": "",
+      "EML_GBIF_SCHEMA": "EML文件没通过格式进行验证",
+      "UNKNOWN_ROWTYPE": "核心集／延伸集的列类型未知",
+      "REQUIRED_TERM_MISSING": "缺少核心集／延伸集所需术语",
+      "COLUMN_MISMATCH": "列不匹配",
+      "RECORD_REFERENTIAL_INTEGRITY_VIOLATION": "违反记录参考的完整性",
+      "UNKNOWN_TERM": "未知术语",
+      "DUPLICATED_TERM": "重复的术语",
+      "TITLE_MISSING_OR_TOO_SHORT": "数据集的标题缺失或太短",
+      "RESOURCE_CONTACTS_MISSING_OR_INCOMPLETE": "资源创建者丢失或不完整",
+      "DESCRIPTION_MISSING_OR_TOO_SHORT": "数据集的描述缺失或太短",
+      "LICENSE_MISSING_OR_UNKNOWN": "许可证无法解析，GBIF不支持或仅丢失",
+      "RECORD_NOT_UNIQUELY_IDENTIFIED": "未唯一标识的记录",
+      "UNREADABLE_SECTION_ERROR": "不可读部分错误",
       "NoIssuesFound": "没有发现资源"
     },
     "fileFormat": {
@@ -45,12 +45,12 @@
         "title": "扩展"
       },
       "METADATA": {
-        "description": "",
+        "description": "描述EML（生态元数据语言）数据的元数据",
         "title": "元数据文档"
       },
       "META_DESCRIPTOR": {
-        "description": "",
-        "title": ""
+        "description": "描述数据结构的语义注释（文件、列等）",
+        "title": "元描述符"
       }
     },
     "fileSizeLimit": "文件大小限制：100 mb",
@@ -100,7 +100,7 @@
     "indexeable": "GBIF 可为该文件编制索引",
     "notIndexeable": "GBIF 无法为该文件编制索引",
     "numberOfLines": "行数",
-    "reportProducedByGbifDataValidator": "",
+    "reportProducedByGbifDataValidator": "GBIF 数据验证器生成的报告",
     "validationReport": "校验报告",
     "dataValidator": "数据验证器",
     "dataValidatorDescription": "GBIF数据验证器是一项数据服务。它允许任何有GBIF相关数据集的人接受数据集内内容的综合正确性和有效性的报告。",
@@ -117,8 +117,8 @@
       "newValidation": "新验证",
       "about": "关于",
       "darwinCoreExtensions": "达尔文核心扩展",
-      "metaData": "",
-      "summary": ""
+      "metaData": "元数据",
+      "summary": "总结"
     }
   }
 }

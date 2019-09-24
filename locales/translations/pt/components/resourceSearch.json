@@ -1,5 +1,6 @@
 {
     "resourceSearch": {
+        "title": "Pesquisa de recursos",
         "upcoming": "Próximos",
         "past": "Passados",
         "searchForNewsEventsDocuments": "Pesquise notícias, eventos, documentos e muito mais. Se estiver à procura de ocorrências de espécies então tente a nossa pesquisa de ocorrências.",
@@ -11,7 +12,7 @@
             "news": "Notícias",
             "resources": "Recursos",
             "projects": "Projectos",
-            "programmes": "Programadores",
+            "programmes": "Programas",
             "documents": "Documentos",
             "tools": "Ferramentas",
             "dataUse": "Uso dos dados",
